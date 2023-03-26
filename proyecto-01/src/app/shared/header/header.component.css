@@ -1,0 +1,10 @@
+.main-header{
+    background: #beb3b3;
+}
+.media-icon{
+    color: white;
+    font-size: 1.6rem;
+}
+.media-icon:hover{
+    color: #edeaea;
+}
