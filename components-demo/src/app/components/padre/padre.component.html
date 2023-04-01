@@ -1,0 +1,21 @@
+<label style="width: 100%; text-align: center">Tu nombre es {{ nombre }}</label>
+<br />
+<div class="d-flex my-4 align-items-center justify-content-center">
+  <div class="row">
+    <div class="col">
+      <form>
+        <input type="text" [(ngModel)]="nombre" name="nombre" />
+        <button
+          (click)="actualizarNombre()"
+          class="btn btn-primary"
+          type="button"
+        >
+          Ejecutar
+        </button>
+      </form>
+    </div>
+    <div class="col">
+      <app-hijo (miEvento)="nombre = $event" [nombreEnHijo]="nombre"></app-hijo>
+    </div>
+  </div>
+</div>

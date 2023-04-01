@@ -1,0 +1,25 @@
+<div class="card bg-light">
+  <div class="card-body">
+    <h4>Lista de tareas</h4>
+    <ul>
+      <li class="my-3" *ngFor="let tarea of tareas">
+        {{ tarea }}
+
+        <button
+          class="btn btn-danger"
+          style="float: right"
+          (click)="eliminarTarea(tarea)"
+        >
+          Eliminar
+        </button>
+        <button
+          class="btn btn-success"
+          style="float: right"
+          (click)="completarTarea(tarea)"
+        >
+          Completada
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

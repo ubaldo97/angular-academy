@@ -1,0 +1,23 @@
+<div class="card bg-light">
+  <div class="card-body">
+    <form style="width: 100%">
+      <label for="input-text" class="form-label">Agregar Tarea</label>
+      <input
+        type="text"
+        class="form-control"
+        id="titulo"
+        name="titulo"
+        [(ngModel)]="titulo"
+        placeholder="Nombre de la tarea"
+      />
+      <button
+        type="submit"
+        style="float: right"
+        (click)="crearTarea()"
+        class="btn btn-primary mt-2 mb-2"
+      >
+        Agregar
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="container my-4">
+  <div class="row">
+    <div class="col-4">
+      <app-input (tareaCreada)="agregarTarea($event)"></app-input>
+    </div>
+    <div class="col">
+      <app-view
+        [tareas]="tareas"
+        (tareaEliminada)="eliminarTarea($event)"
+        (tareaCompletada)="completarTarea($event)"
+      ></app-view>
+
+      <app-completed
+        [tareas]="tareasCompletas"
+        (tareaRestaurada)="restaurarTarea($event)"
+        (tareaEliminada)="eliminarTareaCompletada($event)"
+      ></app-completed>
+    </div>
+  </div>
+</div>
